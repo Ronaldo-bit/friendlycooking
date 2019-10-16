@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es-cl">
+  <head>
+
+      {% load static%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="{% static 'Usuario/manifest.json' %}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/style.css' %}">
+    <title>Recetas Tradicionales</title>
+  </head>
+  <body>
+      <section id="cover" >
+        <div class="cover-text-sm  content-center" >
+    <div class="container content-center ">
+      <h2>  Regístrate en Friendly Cooking:</h2>
+      <p></p>
+        <p>Estas a un paso de ser parte de nuestra familia Friendly Cooking al Suscribirte estarás participando por increibles premios, cada uno de ellos pensado en ti, ingresa tus datos y vamos a cocinar !</p>
+      <form action="index1.html" method="GET" id="formulario">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <p></p>
+          <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Nombre">
+        </div>
+        <div class="form-group">
+            <label for="Apellido">Apellido:</label>
+            <p></p>
+            <input type="text" class="form-control" name="Apellido" placeholder="Ingrese su Apellido">
+          </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <p></p>
+          <input type="Email" class="form-control" name="Email" placeholder="Ingrese su Email">
+        </div>
+        <div class="form-group">
+          <label for="fnacimiento">Fecha nacimiento:</label>
+          <p></p>
+          <input type="Date" class="form-control" name="fnacimiento" placeholder="Ingrese Fecha Nacimiento">
+        </div>
+        <div class="form-group">
+          <label for="text">Indicanos que tipo de recetas te interesan más, así podremos mejorar tu experiencia! </label>
+         <p></p>
+          <textarea name="text" class="form-control" rows="2"></textarea>
+        </div>
+
+        <button type="reset" class="btn btn-danger">Limpiar</button>
+        <button class="btn btn-info" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <p>
+    
+  </p>
+</section>
+
+    <!-- FILES  JS-->
+    <script src="{% static 'Usuario/js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'Usuario/js/jquery.validate.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'Usuario/js/bootstrap.js' %}" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="{% static 'Usuario/js/app.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+
+  {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friendly Cooking</title>
+    <!--Aqui van los link del CSS-->
+    <link rel="stylesheet" href="{% static 'Usuario/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/flexboxgrid.css'%}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/bootstrap.css'%}">
+</head>
+<body>
+   <!--Aca va el cuerpo-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index1.html"> Inicio Friendly Cooking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon  border border-info"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Recetas </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"  href="{% url 'RecetaTradicional' %}">Recetas Tradicionales</a>
+            <a class="dropdown-item"  href="index3.html">Recetas Veganas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="index4.html">Postres y Repostería</a>
+          </div>
+        </li>
+      
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Suscribirse<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Suscríbete y participa por increíbles premios!</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="search">
+        <button class="btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+<p>
+</p>
+
+
+<!--Carousel-->
+<section id="carousel">
+<div id="carousel-home" class="carousel slide " data-ride="carousel" >
+  <ol class="carousel-indicators img-fluid">
+    <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-home" data-slide-to="1"></li>
+    <li data-target="#carousel-home" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner " role="listbox">
+    <div class="carousel-item active ">
+      <img  class="d-block img-fluid" src="{% static 'Usuario/img/picadillo-1.jpg'%}"  alt="Picadillo">
+      
+    </div>
+    <div class="carousel-item">
+      <img  class="d-block img-fluid"  src="{% static 'Usuario/img/Friendly Cooking.png'%}" alt="Friendly Cooking">
+    </div>
+    <div class="carousel-item">
+      <img    class="d-block img-fluid" src="{% static 'Usuario/img/berenjena.jpg'%}" alt="berenjenas">
+    </div>
+    <div class="carousel-item">
+      <img    class="d-block img-fluid" src="{% static 'Usuario/img/Suscríbete y participa por Increíbles Premios.png' %}" alt="Suscribirsee">
+    </div>
+  </div>
+  <a class="carousel-control-prev " href="#carousel-home" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterio</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+  <p>
+
+
+
+
+  </p>
+</div>
+</section>
+
+
+<section id="cooking">
+  <div class="contenido-seccion justify-content-center">
+    <div class="container">
+      <h2> Nuestras Recetas</h2>
+      <p class="lead">En Friendly Cooking encontrarás más de 2.000 recetas.
+         Hay platos tradicionales, sencillas creaciones propias, recetas de restaurantes y muchos años de trabajo,
+          sin duda el mejor que he tenido nunca. A través de esta inmensa ventana es hoy posible regalar al mundo entero deliciosos momentos dulces, salados y picantes, 
+          además compartir con ustedes toda nuestra alegría y sabor.</p>
+          <h2>Entre las mas destacadas de la Semana! </h2>
+          <p></p>
+
+    <div class="row">
+      <div class="col-sm-12">
+          <div class="card-group">
+              <div class="card text-white bg-dark">
+                <img src="{% static 'Usuario/img/hamburguesa-de-mijo-con-pan jeje.jpg' %}" class="card-img-top" alt="Hamburguesa de mijo con pan">
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesas de Mijo</h5>
+                  <p class="card-text">En los últimos años se han hecho muy populares las hamburguesas veganas. 
+                    Hamburguesas de quinoa, de espinacas, de avena, de tofu o de garbanzos, son ya platos habituales de muchos restaurantes.
+                     Hoy les enseñamos la receta de hamburguesa de mijo! .</p>
+                  
+                </div>
+              </div>
+              <div class="card text-white bg-dark">
+                <img src="{% static 'Usuario/img/muffins-de-zanahoria-veganos-f-480x270.jpg' %}" class="card-img-top" alt="Empanadas de Pino Veganos">
+                <div class="card-body">
+                  <h5 class="card-title">Magdalenas de Zanahoria</h5>
+                  <p class="card-text">Estas Magdalenas de Zanahoria Veganas son una perdición, y no podrás comerte solo una, te lo aseguro. Además de sencillas y saludables, también son veganas y sin gluten. </p>
+                  
+                </div>
+              </div>
+              
+            </div>
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card-group">
+                <div class="card text-white bg-dark">
+                  <img src="{% static 'Usuario/img/pastas-veganas-672x372.jpg' %}" class="card-img-top" alt="Pasta Vegana">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta Vegana</h5>
+                    <p class="card-text">La pasta, de por sí, es un alimento vegetariano siempre y cuando no contenga 
+                      ingredientes de origen animal, como por ejemplos las pastas al huevo.
+                       Si, además de contener ingredientes de origen vegetal, ningún animal ha participado 
+                       en el proceso de producción o distribución de la pasta, podemos hablar de pasta vegana. 
+                       Pero la pasta se suele comer con salsas que suelen contener carne y queso y que, por tanto
+                        no son aptas para aquellas personas que siguen una dieta vegana. Así que, en este post,
+                         queremos enseñarte nuestra receta de pasta vegana para deleitar tu paladar.</p>
+                    
+                  </div>
+                </div>
+                <div class="card text-white bg-dark">
+                  <img src="{% static 'Usuario/img/Empanadas.jpg' %}" class="card-img-top" alt="Empanadas de Pino Veganos">
+                  <div class="card-body">
+                    <h5 class="card-title">Empanadas de Pino</h5>
+                    <p class="card-text">El 18 de Septiembre se celebra la Independencia de Chile y una de las comidas tradicionales son las empanadas de pino chilenas. Yo aprendí a
+a hacerlas gracias a mi abuela materna y las hago cada 18 de Septiembre aquí en USA,espero les guste mi receta!
+                      
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+      </div>
+</section>
+<p></p>
+
+
+
+<!--Pagination-->
+<section>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination text-black  bg-dark justify-content-center ">
+      <li class="page-item active">
+       
+      </li>
+      <li class="page-item"><a class="page-link" href="index1.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="Index2.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="index4.html">4</a></li>
+      <li class="page-item">
+        
+      </li>
+    </ul>
+  </nav>
+</section>
+
+    <!--Aca van las librerias de JAVA-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'Usuario/js/bootstrap.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friendly Cooking</title>
+    <!--Aqui van los link del CSS-->
+    <link rel="stylesheet" href="{% static 'Usuario/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'Usuario/css/bootstrap.css' %}">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index1.html">Inicio Friendly Cooking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon  border border-info"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recetas </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="Index2.html">Recetas Tradicionales</a>
+                <a class="dropdown-item"  href="index3.html">Recetas Veganas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index4.html">Postres y Repostería</a>
+              </div>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Suscribirse<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Suscríbete y participa por increíbles premios!</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="search">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+  
+
+<!--Carpeta de Recetas-->
+  <!----------------------------------------------------------------------------------->
+  <section id="recetas2">
+        <div class="center">
+            <div class="media-body">
+              <h2 class="mt-0"><span class="badge badge-secondary"></span> Postres y Repostería</h2>
+              ¿Quién se resiste a un dulce? Y lo que es más… ¿quién se resiste a un dulce casero? 
+              Desde que se popularizó el consumo de azúcar, los postres y dulces forman parte de las
+               tradiciones gastronómicas de cada rincón del mundo, vamos a probarlos!
+            </div>
+          </div>
+        <p></p>
+        
+        <!--Carpeta de Recetas-->
+         <!----------------------------------------------------------------------------------->
+         
+         <div class="recetas2" >
+         
+          
+         <center>
+             <h3>Torta Helada </h3>
+         <img src="{% static 'Usuario/img/1003075_1.jpg' %}" class="img-fluid" height="500" width="500" </img>
+        </center>
+         <p></p>
+         <dl class="row">
+            <dt class="col-sm-3 right">Ingredientes:</dt>
+            <dd class="col-sm-9">
+               <p>- 1 caja de galletas de vainilla tipo macarena molidas.</p> 
+                <p>- 2 bolsas de Crema de Leche Alquería de 200 g.</p>
+               <p>- 1 taza de azúcar.</p>
+               <p>- 1/2 kilo de fresas / frutillas </p>
+               <p>- Esencia de vainilla al gusto.</p>
+               
+            </dd>
+            <dt class="col-sm-3 text-truncate right">Preparación Torta Helada:</dt>
+            <dd class="col-sm-9">En un bowl, y con ayuda de un tenedor o un batidor, batimos la Crema de Leche Alquería con el azúcar hasta que esté montada o que forme picos (podemos agregar aquí también un poco de esencia de vainilla),Luego cortamos las fresas en láminas delgadas,en un molde redondo que podamos llevar al 
+               congelador, acomodamos una capa de galletas, sobre esto ponemos una tercera parte de la 
+               crema y una capa de las láminas de fresa; luego, cubrimos con otra capa de galletas, otro
+                tercio de la crema y otra capa de fresas, para terminar con una capa de galletas y luego
+                 la crema restante.
+                Llevamos al congelador por un mínimo de ocho horas,podemos desmoldar
+                 con un poquito de calor alrededor del molde. Cuando vayamos a servir, podemos decorar la superficie con algunos trozos de fresas frescas.
+                <p></p>
+                
+        </div>
+        <!--Comentar recetas-->
+<section id="cover1" >
+    <div class="cover-texto  content-center" >
+<div class="container content-center ">
+  <h2>Se parte de Friendly Cooking!</h2>
+  <p></p>
+    <p>Dejanos aquí tu receta y podrás aparecer dentro de nuestros destacados o ser parte de la Familia Friendly Cooking !</p>
+  <form action="#" method="GET" id="formulario">
+    
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <p></p>
+      <input type="Email" class="form-control" name="Email" placeholder="Ingrese su Email">
+    </div>
+    <div class="form-group">
+      <label for="dRecetas">Receta:</label>
+     <p></p>
+      <textarea name="dRecetas" class="form-control" rows="6"></textarea>
+    </div>
+    
+
+    <button type="reset" class="btn btn-danger">Limpiar</button>
+    <button class="btn btn-info" type="submit">Enviar</button>
+
+     
+  </form>
+</div>
+</div>
+<p>
+
+</p>
+</section>
+          <!--Pagination-->
+<section>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination bg-dark justify-content-center ">
+      <li class="page-item active">
+        
+      </li>
+      <li class="page-item"><a class="page-link" href="index1.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="Index2.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="index4.html">4</a></li>
+      <li class="page-item">
+        
+      </li>
+    </ul>
+  </nav>
+  
+</section>
+
+        </section>
+        
+
+  
+    <!-- FILES  JS-->
+    <script src="{% static 'Usuario/js/jquery-3.4.1.js'%}"></script>
+    <script src="{% static 'Usuario/js/jquery.validate.js'%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'Usuario/js/bootstrap.js'%}" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="{% static 'Usuario/js/app.js'%}"></script>
+  
+  </body>
+  </html>
+  
+ 

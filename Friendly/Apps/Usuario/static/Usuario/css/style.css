@@ -1,0 +1,45 @@
+.body{
+    background: black;
+}
+
+.main {
+    
+     background-color :violet ;  }
+
+.header {
+    background-color:azure ;
+}
+
+.img-fluid{
+    margin: auto;
+
+}
+/*cover*/
+#cover{
+    background:#222 url('../img/FrutasyVerduras.jpg')  ;
+    color: white;   
+    
+} 
+#recetas{
+    background: url('../img/SI.jpg') ;
+    color:white;
+}
+#recetas1{
+    background: url('../img/SI.jpg');
+    color:white;
+}
+#recetas2{
+    background: url('../img/SI.jpg');
+    color:white;
+}
+#PG{
+    background: #222;
+    color:black;
+}
+.right{
+    text-align: right;
+}
+
+.justify{
+    text-align: justify; 
+}

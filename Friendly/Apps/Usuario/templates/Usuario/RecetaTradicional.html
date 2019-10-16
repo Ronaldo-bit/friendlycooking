@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es-cl">
+
+<head>
+
+    {% load static%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="{% static 'Usuario/manifest.json' %}">
+  <link rel="stylesheet" href="{% static 'Usuario/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'Usuario/css/flexboxgrid.css' %}">
+  <link rel="stylesheet" href="{% static 'Usuario/css/style.css' %}">
+  <title>Recetas Tradicionales</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index1.html">Inicio Friendly Cooking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon  border border-info"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Recetas </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Index2.html">Recetas Tradicionales</a>
+            <a class="dropdown-item" href="index3.html">Recetas Veganas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="index4.html">Postres y Repostería</a>
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Suscribirse<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Suscríbete y participa por increíbles
+            premios!</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="search">
+        <button class="btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <section id="recetas">
+    <div class="center">
+      <div class="media-body">
+        <h2 class="mt-0"><span class="badge badge-secondary"></span> Recetas Tradicionales</h2>
+        La riqueza de la cultura gastronómica Chilena se debe, en parte, a la variedad de sus cocinas regionales y a los
+        platos que se han transmitido de generación en generación
+        y que forman parte del patrimonio de las Comunidades Autónomas.
+        Cocinas que son el reflejo de diferentes culturas, climas y paisajes.
+      </div>
+    </div>
+    <p></p>
+
+    <!--Carpeta de Recetas-->
+    <!----------------------------------------------------------------------------------->
+
+    <div class="recetas">
+
+
+      <center>
+        <h3>Empanadas de Pino</h3>
+        <img src="{% static 'Usuario/img/Empanadas.jpg' %}" class="img-fluid" height="500" width="500" </img> </center> <p></p>
+        <dl class="row">
+          <dt class="col-sm-3 right">Ingredientes para el Pino:</dt>
+          <dd class="col-sm-9">
+            <p>-1 kilo o 2 libras de carne de vacuno picada, puede ser posta</p>
+            <p>-1 taza caldo de vacuno</p>
+            <p>-3 cebollas grandes o 4 medianas picadas en cubos chicos</p>
+            <p>-2 cucharadas de harina</p>
+            <p>-2 cucharadas de ají de color o paprika o merkén</p>
+            <p>-1/2 cucharadita de comino</p>
+            <p>-sal y pimienta al gusto</p>
+            <p>-4 cucharadas de aceite</p>
+          </dd>
+
+          <dt class="col-sm-3 right">Opcional Pino:</dt>
+          <dd class="col-sm-9">
+            <p>-20 aceitunas negras,
+              40 pasas,
+              5 huevos duros.</p>
+          </dd>
+
+          <dt class="col-sm-3 right">Ingredientes para la Masa:</dt>
+          <dd class="col-sm-9">
+            <p>-1 taza de leche</p>
+            <p>-1 taza de agua tibia</p>
+            <p>-1 cucharada de sal rasa</p>
+            <p>-1 kilo de harina</p>
+            <p>-4 yemas de huevo</p>
+            <p>-180 gramos de manteca vegetal derretida tibia</p>
+          </dd>
+
+          <dt class="col-sm-3 text-right">Preparación de las Empanadas:</dt>
+          <dd class="col-sm-9">Siempre hacer el pino el día antes.Calentar en una olla grande el aceite,
+              sofreír la carne hasta que se dore un poco, unos 8 minutos, agregar el ají de color, sal,
+              pimienta y comino, sofreír unos minutos más.Agregar el caldo y dejar cocinar 30 minutos a fuego bajo.
+              Agregar las cebollas incorporar bien y dejar cocinar a fuego medio hasta que la cebolla este suave, unos
+              30 minutos más.Agregar el harina y revolver bien, ajustar la sazón de ser necesario, dejar enfriar y refrigerar.
+            <p>Para la masa, hacer una salmuera con la leche, el agua y la sal, revolver hasta disolver la sal totalmente.
+              En un bol grande poner toda la harina, agregar las yemas (todas juntas), incorporar revolviendo con una
+              cuchara de palo o con un tenedor o con la punta de los dedos como pellizcando. Quieren obtener una
+              arenilla de distintos grosores. Agregar la manteca y trabajar un poco más de la misma manera, a esta
+              altura solo se tendrán migas no una masa todavía.
+              Seguir trabajando la masa mientras van agregando la salmuera hasta obtener una masa suave y elástica. Esto
+              les va a tomar unos 10 minutos de amasado a mano.
+              En caso de necesitar mas humedad seguir agregando agua y leche sin sal.
+              Precalentar el horno a 350F o 180C para las empanadas de pino.
+              Separar la masa en 20 porciones y cubrir con un paño húmedo. Trabajar cada porción individualmente,
+              uslereando hasta conseguir una masa fina, cortar en círculo y rellenar con 2 cucharadas de pino, un cuarto
+              de huevo duro, aceituna y pasas si desean. No recomiendo extender la mitad de la masa y cortar varias
+              redóndelas a la vez porque van a quedar muchos recortes y cada vez que los uslerean se van poniendo más
+              duros. Con este método se aseguran que sus empanadas queden bonitas, dado que la masa tendrá la
+              flexibilidad adecuada.
+              Cerrar untando con leche el borde, presionar firmemente y hacer los dobleces. Pincelar con un batido de
+              huevo y agua antes de llevar al horno.
+              Hornear por 30-35 minutos hasta que estén doradas, vigilarlas durante la cocción si se inflan, enterrar un
+              mondadientes para desinflarlas así no se les abren.
+              Servir calientes. Para recalentar ponerlas al horno a la misma temperatura por 15 minutos.</p>
+          </dd>
+
+    </div>
+    <!--Comentar recetas-->
+    <section id="cover1">
+      <div class="cover-texto  content-center">
+        <div class="container content-center ">
+          <h2>Se parte de Friendly Cooking!</h2>
+          <p></p>
+          <p>Dejanos aquí tu receta y podrás aparecer dentro de nuestros destacados o ser parte de la Familia Friendly
+            Cooking !</p>
+          <form action="#" method="GET" id="formulario">
+
+            <div class="form-group">
+              <label for="Email">Email:</label>
+              <p></p>
+              <input type="Email" class="form-control" name="Email" placeholder="Ingrese su Email">
+            </div>
+            <div class="form-group">
+              <label for="dRecetas">Receta:</label>
+              <p></p>
+              <textarea name="dRecetas" class="form-control" rows="6"></textarea>
+            </div>
+
+
+            <button type="reset" class="btn btn-danger">Limpiar</button>
+            <button class="btn btn-info" type="submit">Enviar</button>
+
+
+          </form>
+        </div>
+      </div>
+      <p>
+
+      </p>
+    </section>
+    <!--Pagination-->
+    <section id="PG">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination bg-dark justify-content-center ">
+          <li class="page-item active">
+
+          </li>
+          <li class="page-item"><a class="page-link" href="index1.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="Index2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="index3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="index4.html">4</a></li>
+          <li class="page-item">
+
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+  </section>
+
+
+
+
+  <!-- FILES  JS-->
+  <script src="{% static 'Usuario/js/jquery-3.4.1.js'%}"></script>
+  <script src="{% static 'Usuario/js/jquery.validate.js'%}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="{% static 'Usuario/js/bootstrap.js'%}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="{% static 'Usuario/js/app.js'%}"></script>
+
+</body>
+
+</html>
